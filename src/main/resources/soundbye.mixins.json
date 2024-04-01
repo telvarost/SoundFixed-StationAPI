@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.github.telvarost.soundbye.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "server": [
+  ],
+  "client": [
+    "AbstractClientPlayerMixin",
+    "BoatMixin",
+    "ChickenMixin",
+    "CowMixin",
+    "CreeperMixin",
+    "FishHookMixin",
+    "FoodBaseMixin",
+    "GhastMixin",
+    "ItemInstanceMixin",
+    "SheepMixin",
+    "StoneSlabItemMixin",
+    "WolfMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

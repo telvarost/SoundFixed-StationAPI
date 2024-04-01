@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "soundbye",
+  "version": "${version}",
+
+  "name": "SoundBye",
+  "description": "Fixes everything. Better than music+",
+  "authors": [
+    "Telvarost",
+    "Dany"
+  ],
+  "contact": {
+    "issues": "https://github.com/telvarost/SoundBye-StationAPI/issues",
+    "homepage": "https://github.com/telvarost/SoundBye-StationAPI/",
+    "sources": "https://github.com/telvarost/SoundBye-StationAPI/"
+  },
+
+  "license": "MIT",
+  "icon": "assets/soundbye/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "stationapi:event_bus": [
+    ],
+    "stationapi:event_bus_client": [
+    ],
+    "stationapi:event_bus_server": [
+    ],
+    "gcapi": [
+      "com.github.telvarost.soundbye.Config"
+    ]
+  },
+  "mixins": [
+    "soundbye.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3"
+  },
+
+  "breaks": {
+    "finalbeta": "*",
+    "unitweaks": "*"
+  },
+
+  "custom": {
+    "modmenu:clientsideOnly": true
+  }
+}
